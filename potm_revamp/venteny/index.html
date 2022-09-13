@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sgbold: ['SpaceGrotesk-Bold', 'sans-serif'],
+                        sgregular: ['SpaceGrotesk-Regular', 'sans-serif'],
+                        ralewaysmbold: ['Raleway-SemiBold', 'sans-serif'],
+                        ralewaylight: ['Raleway-Light', 'sans-serif'],
+                        questrial: ['Questrial-Regular', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            function test() {
+                const body = document.querySelector('.box_card');
+                const card = document.querySelector('.card_agreegator');
+                for (let i = 0; i < 3; i++) {
+                    let array = [];
+                    let newCard = card.cloneNode(true);
+                    card.after(newCard);
+                    array.push(newCard);
+                }
+            }
+            test();
+        });
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer components {
+            .knowledge ul li {
+                @apply font-ralewaylight;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/global.css">
+
+    <title>Person of The Year | CNBC INDONESIA</title>
+</head>
+
+<body>
+
+    <div class="min-h-full">
+        <header class="bg-white shadow">
+            <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
+                <img class="w-48 md:w-[300px] mx-auto md:mx-0" src="image/logo_potm.png">
+            </div>
+        </header>
+        <nav class="bg-[#011D57]">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex items-center">
+
+                        <div class="">
+                            <div class="ml-0 sm:ml-10 flex items-baseline space-x-4">
+                                <a href="http://cnbcindonesia.com/"
+                                    class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-blue-200"
+                                    aria-current="page">
+                                    <div class="grid grid-cols-7 gap-4">
+                                        <div class="my-auto"><img class="w-5" src="image/arrow_left.png"></div>
+                                        <div class="col-span-6 font-sgbold">Back to CNBC Indonesia</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+
+        <div class="mx-auto w-full py-6 px-4 sm:px-6 lg:px-8 h-40 bg-[#000E29] hidden sm:block">
+
+        </div>
+
+        <main>
+            <div class="mx-auto max-w-7xl py-0 lg:py-6 sm:px-6 lg:px-8">
+                <!-- Sesuaikan dengan kontenmu -->
+                <div class="container mx-auto flex flex-wrap py-6 mt-5 sm:-mt-[150px]">
+
+
+
+                    <div class="pt-0 pb-10 md:pt-0 w-full">
+                        <div
+                            class="container m-auto px-2 md:px-12 lg:px-6 pt-3 pb-3 md:pt-3 md:pb-3 sm:rounded-xl sm:shadow-lg bg-white">
+                            <div class="lg:flex lg:items-center lg:gap-x-16">
+                                <div class="space-y-8 lg:w-7/12">
+                                    <div class="overflow-hidden rounded-lg grid grid-cols-1 group sm:grid-cols-2">
+
+                                        <div class="relative m-auto">
+                                            <img class="w-[12rem] h-[12rem] mx-auto object-cover rounded-full md:w-40 md:h-40 lg:w-30 lg:h-30"
+                                                src="image/person_1.png" alt="woman" loading="lazy" width="500"
+                                                height="500">
+                                        </div>
+
+                                        <div class="p-8 sm:col-span-0">
+                                            <ul class="flex space-x-1 justify-center md:justify-start">
+                                                <img class="w-12 mr-2" src="image/logo_potm_single.png" alt="">
+
+                                                <li
+                                                    class="inline-block px-3 py-1 text-xs font-semibold text-black bg-white-600 rounded-full border border-gray-200 font-ralewaylight">
+                                                    September 2022
+                                                </li>
+
+                                            </ul>
+
+                                            <h1
+                                                class="mt-4 font-bold text-3xl text-center text-[#111D57] md:text-left font-sgbold">
+                                                Jun Waide</h1>
+
+                                            <p
+                                                class="mt-2 text-xs text-gray-500 text-center md:text-left font-questrial">
+                                                Founder & Group CEO VENTENY
+                                            </p>
+
+                                            <ul class="flex space-x-1 justify-center md:justify-start pt-3">
+                                                <p class="mr-2 font-ralewaylight">Share</p>
+                                                <a href="{clickurl}"><img class="w-5 mr-2" src="image/twitter_dark.png"
+                                                        alt=""></a>
+                                                <a href="{clickurl}"><img class="w-5 mr-2" src="image/whatsapp_dark.png"
+                                                        alt=""></a>
+                                                <a href="{clickurl}"><img class="w-5 mr-2" src="image/facebook_dark.png"
+                                                        alt=""></a>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="lg:block lg:w-5/12">
+
+                                    <!-- <video class="mt-10 lg:mt-0 w-full" autoplay="" muted="" controls="">
+                                        <source src="https://www.cnbcindonesia.com/embed/tv?smartautoplay=true" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video> -->
+
+                                    <iframe class="mt-10 lg:mt-0 w-full aspect-video" frameborder="0"
+                                        src="https://www.cnbcindonesia.com/embed/tv?smartautoplay=true" allowfullscreen
+                                        autoplay="" muted="" controls="">
+                                    </iframe>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Sidebar Section -->
+                    <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
+
+                        <div
+                            class="w-full bg-white shadow flex flex-col my-4 p-6 knowledge border-t-2 border-[#011D57]">
+                            <p class="text-xl font-semibold pb-2 border-b border-gray-200 mb-5 font-sgbold">Tahukah Anda
+                            </p>
+
+                            <ul
+                                class="text-[12px] space-y-1 max-w-md list-disc list-outside text-gray-500 dark:text-gray-700">
+                                <li class="">
+                                    VENTENY telah
+                                    berkembang pesat menjadi solusi berbasis teknologi “Plug-in-Play” pertama di
+                                    Asia Tenggara bagi para perusahaan dan karyawan
+                                </li>
+                                <li>
+                                    Startup yang
+                                    mengusung Konsep Business Acceleration & Employee Happiness ini memudahkan
+                                    perusahaan dan karyawan untuk mendapat dukungan akses yang lebih mudah dalam
+                                    aspek asuransi, edukasi, lifestyle, hingga finansial.
+                                </li>
+                                <li>
+                                    Startup yang
+                                    mengusung Konsep Business Acceleration & Employee Happiness ini memudahkan
+                                    perusahaan dan karyawan untuk mendapat dukungan akses yang lebih mudah dalam
+                                    aspek asuransi, edukasi, lifestyle, hingga finansial.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- //infografis -->
+
+
+                        <div class="w-full bg-white shadow flex flex-col my-4 p-6 border-t-2 border-[#011D57]">
+                            <p class="text-xl font-semibold pb-5 font-sgbold">Infografis</p>
+                            <div class="grid" onclick="showModal('image/infografis.jpg')">
+                                <img class="hover:opacity-75" src="image/infografis.jpg">
+                            </div>
+
+                            <!-- The Modal -->
+                            <div id="modal"
+                                class="hidden fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center">
+
+                                <!-- The close button -->
+                                <a class="fixed z-90 top-2 right-2 md:top-6 md:right-8 text-white sm:text-2xl md:text-5xl font-bold"
+                                    href="javascript:void(0)" onclick="closeModal()">&times;</a>
+
+                                <!-- A big image will be displayed here -->
+                                <img id="modal-img"
+                                    class="max-w-[300px] md:max-w-[1000px] max-h-[800px] object-cover" />
+                            </div>
+
+                            <script>
+                                // Get the modal by id
+                                var modal = document.getElementById("modal");
+
+                                // Get the modal image tag
+                                var modalImg = document.getElementById("modal-img");
+
+                                // this function is called when a small image is clicked
+                                function showModal(src) {
+                                    modal.classList.remove('hidden');
+                                    modalImg.src = src;
+                                }
+
+                                // this function is called when the close button is clicked
+                                function closeModal() {
+                                    modal.classList.add('hidden');
+                                }
+                            </script>
+
+                        </div>
+                    </aside>
+
+
+                    <!-- Content Section -->
+                    <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+
+                        <dl
+                            class="w-full text-gray-900 divide-y divide-gray-200 dark:text-black dark:divide-gray-200 border-y border-gray-700">
+
+                            <div class="flex flex-col pb-3 pt-3">
+
+                                <dd class="text-xl font-semibold font-sgbold">Penghargaan</dd>
+                            </div>
+                            <div class="flex flex-col py-3">
+
+                                <dd class="text-lg font-ralewaysmbold">Top 100 Startup Paling Menjanjikan - Echelon Asia
+                                    Summit 2017</dd>
+                            </div>
+                            <div class="flex flex-col pt-3 pb-3">
+
+                                <dd class="text-lg font-ralewaysmbold">Pemenang di Financial Innovation Business
+                                    Conference
+                                    2017</dd>
+                            </div>
+
+                        </dl>
+
+                        <div class="">
+                            <dl
+                                class="w-full text-gray-900 divide-y divide-gray-200 dark:text-black dark:divide-gray-700 border-b border-gray-200">
+                                <div class="flex flex-col py-3">
+                                    <dd class="text-xl font-semibold font-sgbold">Kata Mereka</dd>
+                                </div>
+                            </dl>
+                            <p class="flex items-center text-center text-gray-500 lg:mx-8 pt-10 py-2 font-sgregular">
+                                “I see many companies in Southeast Asia have been facing issues with low engagement and
+                                high turnover rate of employees due to many reasons like lack of credit. So, here we are
+                                to fill the gap”
+                            </p>
+                            <div class="flex flex-col items-center justify-center">
+                                <div class="mb-10 text-center border-t border-[#011D57] border-t-2 font-ralewaysmbold">
+                                    <h1 class="font-semibold text-gray-800 dark:text-black">Jun Waide</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <dl
+                            class="w-full text-gray-900 divide-y divide-gray-200 dark:text-black dark:divide-gray-700 border-b border-gray-200 mb-3">
+                            <div class="flex flex-col py-3">
+                                <dd class="text-xl font-semibold font-sgbold">Lainnya Tentang Jun Waide</dd>
+                            </div>
+                        </dl>
+
+                        <div class="space-y-2 box_card">
+                            <div class="pt-4 flex lg:items-end group card_agreegator">
+                                <div class="flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
+                                    <img class="w-16 h-16 grid grid-cols-2 md:w-25 md:h-25 rounded-md lg:w-32 lg:h-32 object-cover"
+                                        src="image/thumb_1.png" alt="text">
+                                </div>
+                                <div class="my-auto ml-3 sm:ml-0">
+
+                                    <p class="text-lg font-semibold leading-4">
+                                        <a href="{clickurl}"
+                                            class="text-xl sm:text-xl text-gray-800 group-hover:text-gray-500 lg:text-xl leading-6 font-sgbold">12
+                                            Jadi The First Employee Super App, Ini Inovasi VENTENY</a>
+                                    </p>
+                                    <p class="mt-2 sm:text-sm text-gray-500 text-xs font-sgregular">VENTENY telah
+                                        memperkenalkan
+                                        sebagai The First Employee Super App di Asia Tenggara. Aplikasi ini dirancang
+                                        khusus bagi karyawan dari berbagai kalangan, mulai dari skala mikro hingga
+                                        korporasi besar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Pagination -->
+                        <div class="flex items-center py-8 font-sgbold -z-10">
+                            <a href="{clickurl}" target="_blank">
+                                <button
+                                    class="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#111D57] rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                                    Lebih Banyak
+                                </button>
+                            </a>
+                        </div>
+
+                    </section>
+
+
+
+                </div>
+                <!-- /End replace -->
+            </div>
+        </main>
+    </div>
+
+
+    <footer class="p-8 bg-white sm:p-6 bg-[#011D57]">
+        <div class="md:flex md:justify-between">
+            <div class="mx-10 md:mx-20 mb-6 md:mb-0">
+                <a href="{clickurl}" class="flex items-center justify-center md:justify-between">
+                    <img src="image/logo_potm_white.png" class="mr-3 w-[200px] mb-5" alt="">
+                </a>
+
+                <div class="grid grid-cols-4 md:grid-cols-4 gap-4">
+                    <div class="col-span-4 md:col-span-3">
+                        <p class="mt-2 text-[#D1D5DB] text-xs text-center md:text-left font-sgregular">CNBC Indonesia
+                            mempersembahkan
+                            sebuah campaign “Person of
+                            The
+                            Month” bagi para tokoh atau orang-orang yang berkepentingan untuk diberikan apresiasi berupa
+                            liputan
+                            serta berita mengenai mereka, dibahas secara menarik dan bermanfaat bagi masyarakat serta
+                            user CNBC
+                            Indonesia. </p>
+                    </div>
+                    <div class="grid grid-cols-4 md:grid-cols-1 md:block hidden">
+                        <div class="flex col-span-4 md:col-span-1 justify-end gap-0 sm:gap-4 md:gap-4 space-x-4">
+                            <div class="">
+                                <a href="https://twitter.com/cnbcindonesia" target="_blank"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <img class="w-[400px] md:w-6" src="image/twitter.png" alt="">
+                                </a>
+                            </div>
+                            <div class=""><a href="https://www.instagram.com/cnbcindonesia/" target="_blank"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <img class="w-[400px] md:w-6" src="image/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="order-last"><a href="https://www.facebook.com/CNBCIndonesia/" target="_blank"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <img class="w-[400px] md:w-6" src="image/facebook.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mt:20px md:hidden">
+                    <div class="grid grid-cols-4">
+                        <div class="flex col-span-4 justify-center gap-0 sm:gap-4 md:gap-8 space-x-4 mt-5">
+                            <div class="">
+                                <a href="https://twitter.com/cnbcindonesia" target="_blank"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <img class="w-[20px] md:w-6" src="image/twitter.png" alt="">
+                                </a>
+                            </div>
+                            <div class=""><a href="https://www.instagram.com/cnbcindonesia/" target="_blank"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <img class="w-[20px] md:w-6" src="image/instagram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="order-last"><a href="https://www.facebook.com/CNBCIndonesia/" target="_blank"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <img class="w-[20px] md:w-6" src="image/facebook.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-10 md:mx-20 my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+        <div class="mx-10 md:mx-20 justify-center sm:flex items-center text-center md:items-center md:justify-between">
+            <span class="text-sm text-[#D1D5DB] sm:text-center dark:text-[#D1D5DB] font-sgregular">© 2022 CNBC
+                Indonesia. All rights
+                reserved
+            </span>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: SpaceGrotesk-Bold;
+    src: url(../font/SpaceGrotesk-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: SpaceGrotesk-Regular;
+    src: url(../font/SpaceGrotesk-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Raleway-SemiBold;
+    src: url(../font/Raleway-SemiBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Raleway-Light;
+    src: url(../font/Raleway-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Questrial-Regular;
+    src: url(../font/Questrial-Regular.ttf) format("truetype");
+  }
+}
+
+
+
+
+
+
